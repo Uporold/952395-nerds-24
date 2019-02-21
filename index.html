@@ -5,14 +5,13 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <title>HTML Academy: Нёрдс Главная</title>
+    <link type="text/css" href="css/normalize.css" rel="stylesheet" media="all" />
     <link type="text/css" href="css/style.css" rel="stylesheet" media="all" />
 </head>
 
 <body>
-
-
     <!-- Навигация с логотипом -->
-    <div class="topbg">
+    <div class="top-bg">
         <header class="main-header template">
 
             <div class="main-header-logo">
@@ -23,10 +22,10 @@
 
             <nav class="main-nav">
                 <ul class="site-navigation">
-                    <li class="nav_element site-navigation-current"><a href="index.html">Студия</a></li>
-                    <li class="nav_element"><a href="clients.html">Клиенты</a></li>
-                    <li class="nav_element"><a href="catalog.html">Магазин</a></li>
-                    <li class="nav_element"><a href="contacts.html">Контакты</a></li>
+                    <li class="nav-element site-navigation-current"><a href="index.html">Студия</a></li>
+                    <li class="nav-element"><a href="clients.html">Клиенты</a></li>
+                    <li class="nav-element"><a href="catalog.html">Магазин</a></li>
+                    <li class="nav-element"><a href="contacts.html">Контакты</a></li>
                 </ul>
             </nav>
 
@@ -66,11 +65,8 @@
                 </ul>
             </div>
         </section>
-
     </div>
-
     <main>
-
         <!-- Услуги -->
         <section class="services template">
             <h2 class="visually-hidden">Наши услуги</h2>
@@ -100,13 +96,13 @@
         </section>
 
         <section class="about-us-main template">
-            <article class="about-us">
+            <div class="about-us">
                 <h2 class="visually-hidden">О нас</h2>
                 <h2 class="about-us-slogan">
                     Мы — маленькая, но гордая дизайн-студия из Краснодара.
                 </h2>
                 <p class="about-us-para">
-                    Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.
+                    Исповедуем принципы минимализма и чистоты. Ставим математический расчет <br> превыше креатива. Работаем не покладая рук, как роботы.
                 </p>
                 <h4 class="about-us-heading">
                     Выполняем заказы на разработку:
@@ -122,9 +118,9 @@
                         Слайдшоу и видео для корпоративных презентаций
                     </li>
                 </ul>
-            </article>
+            </div>
 
-            <article class="about-us-info">
+            <div class="about-us-info">
                 <img class="about-us-logo" src="img/nerds-illustration.png" alt="Лого Nёрдс">
                 <h4 class="about-us-heading">
                     С 2004 года любим точность во всем:
@@ -145,10 +141,8 @@
                         <p class="number">50<span class="percent">%</span></p>
                     </div>
                 </div>
-            </article>
+            </div>
         </section>
-
-
 
         <section class="clients template">
             <h2 class="visually-hidden">Наши клиенты</h2>
@@ -170,16 +164,16 @@
                 </li>
                 <li class="clients-element">
                     <a class="clients-link client4" href="#">
-                        <img class="clients-logo" width="173" height="84" src="img/logo-4.png" alt="Mishka Handmade">
+                        <img class="clients-logo" src="img/logo-4.png" width="173" height="84"  alt="Mishka Handmade">
                     </a>
                 </li>
             </ul>
         </section>
 
-        <section class="map_contacts">
+        <section class="map-contacts">
 
-            <article class="info-map-box">
-                <div class="info-map">
+            <div class="info-map-box">
+                <address class="info-map">
                     <h3>Nёrds Design Studio</h3>
 
                     <p>191186, Санкт-Петербург,
@@ -188,79 +182,75 @@
                     </p>
 
                     <a href="tel:+78122757575"> тел. +7 (812) 275-75-75</a>
-                    <a href="#" class="mapbtn btn">Напишите нам</a>
-                </div>
-            </article>
+                    <a href="#" class="map-btn btn">Напишите нам</a>
+                </address>
+            </div>
 
             <div class="map">
                 <img src="/img/map.png" width="1440" height="416" alt="Как добраться">
             </div>
-
         </section>
     </main>
-
     <!-- Подвал с соцсетями и скидкой -->
     <footer class="page-footer template">
-        <section class="info">
-            <ul class="soc-list">
-                <li class="soc-item">
-                    <a class="social-button vk" href="#">
-                        <span class="visually-hidden">Вконтакте</span>
-                    </a>
-                </li>
-                <li class="soc-item">
-                    <a class="social-button fb" href="#">
-                        <span class="visually-hidden">Фейсбук</span>
-                    </a>
-                </li>
-                <li class="soc-item">
-                    <a class="social-button inst" href="#">
-                        <span class="visually-hidden">Инстаграм</span>
-                    </a>
-                </li>
-            </ul>
-        </section>
-        <section class="discount">
+
+        <ul class="info soc-list">
+            <li class="soc-item">
+                <a class="social-button vk" href="#">
+                    <span class="visually-hidden">Вконтакте</span>
+                </a>
+            </li>
+            <li class="soc-item">
+                <a class="social-button fb" href="#">
+                    <span class="visually-hidden">Фейсбук</span>
+                </a>
+            </li>
+            <li class="soc-item">
+                <a class="social-button inst" href="#">
+                    <span class="visually-hidden">Инстаграм</span>
+                </a>
+            </li>
+        </ul>
+
+        <div class="discount">
             <h2>Давайте дружить, это выгодно!</h2>
             <p>Скидка 10% для друзей из социальных сетей.</p>
-        </section>
+        </div>
     </footer>
 
-    <form action="post" class="popup-form">
-        <fieldset class="popup-form_field">
-            <legend class="popup-form_legend">Напишите нам</legend>
+    <div class="popup-form-container">
+        <form action="post" class="popup-form">
+            <fieldset class="popup-form-field">
+                <legend class="popup-form-legend">Напишите нам</legend>
 
-            <div class="form-input">
-                <div class="form-input-data">
-                    <label for="name" class="text_input">Ваше имя:</label>
-                    <input type="text" id="name" class="text_field" name="name" placeholder="Имя Фамилия" required>
+                <div class="form-input">
+                    <div class="form-input-data">
+                        <label for="name" class="text-input">Ваше имя:</label>
+                        <input type="text" id="name" class="text-field" name="name" placeholder="Имя Фамилия" required>
+                    </div>
+
+                    <div class="form-input-data">
+                        <label for="name" class="text-input">Ваш email:</label>
+                        <input type="text" id="email" name="email" class="text-field" placeholder="email@example.com" required>
+                    </div>
                 </div>
 
-                <div class="form-input-data">
-                    <label for="name" class="text_input">Ваш email:</label>
-                    <input type="text" id="email" name="email" class="text_field" placeholder="email@example.com" required>
+                <div class="form-message">
+                    <label for="message" class="text-input">Текст письма:</label>
+                    <textarea id="message" class="text-field" name="message" placeholder="В свободной форме" rows="7"></textarea>
                 </div>
-            </div>
 
-            <div class="form-message">
-                <label for="message" class="text_input">Текст письма:</label>
-                <textarea id="message" class="text_field" name="message" placeholder="В свободной форме" rows="7"></textarea>
-            </div>
-
-            <div class="sendform">
-                <button type="submit" class="btn btnform">Отправить</button>
-            </div>
+                <div class="send-form">
+                    <button type="submit" class="btn btn-form">Отправить</button>
+                </div>
 
 
-            <button type="button" class="closecross">
-                <span class="visually-hidden">Скрыть форму </span>
-            </button>
-
-
-        </fieldset>
-    </form>
-
-
+                <button type="button" class="close-cross">
+                    <span class="visually-hidden">Скрыть форму </span>
+                </button>
+            </fieldset>
+        </form>
+    </div>
 </body>
 
 </html>
