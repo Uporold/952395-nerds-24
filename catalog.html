@@ -49,18 +49,22 @@
             <section class="filters template">
                 <h2 class="visually-hidden">Фильтр товаров</h2>
                 <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-                    <fieldset class="slider-form">
-                        <legend class="filter-legend">Стоимость:</legend>
-                        <div class="form-cost">
-                            <label class="min" for="minCost">от</label>
-                            <input class="range-in-output-min" type="text" id="minCost" value="0" />
-                            <label class="max" for="maxCost">до</label>
-                            <input class="range-in-output-max" type="text" id="maxCost" value="20000" />
-                        </div>
-                        <div class="slider-cont">
-                            <div id="slider"></div>
-                        </div>
-                    </fieldset>
+                    <fieldset class="filter-item">
+        <legend>Стоимость:</legend>
+        <div class="range-filter">
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+          </div>
+          <div class="price-controls">
+            <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+            <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+          </div>
+        </div>
+      </fieldset>
                     <fieldset class="filter-field">
                         <legend class="filter-legend">Сетка:</legend>
                         <ul class="filter-list">
@@ -146,7 +150,7 @@
                 <ul class="catalog-list">
                     <li class="catalog-item">
 
-                        <img src="/img/img-sedona.png" class="item-image" width="360" height="576" alt="Шаблон1">
+                        <img src="img/img-sedona.png" class="item-image" width="360" height="576" alt="Шаблон1">
 
                         <div class="popup-info">
                             <h3>Sedona</h3>
@@ -182,7 +186,7 @@
 
                     <li class="catalog-item">
                         <a href="catalog-item.html">
-                            <img src="/img/img-mishka.png" class="item-image" width="360" height="576" alt="Шаблон4">
+                            <img src="img/img-mishka.png" class="item-image" width="360" height="576" alt="Шаблон4">
                         </a>
                         <div class="popup-info">
                             <h3>Mishka</h3>
@@ -194,7 +198,7 @@
 
                     <li class="catalog-item">
                         <a href="catalog-item.html">
-                            <img src="/img/img-aplus.png" class="item-image" width="360" height="576" alt="Шаблон5">
+                            <img src="img/img-aplus.png" class="item-image" width="360" height="576" alt="Шаблон5">
                         </a>
                         <div class="popup-info">
                             <h3>A Plus</h3>
@@ -206,7 +210,7 @@
 
                     <li class="catalog-item">
                         <a href="catalog-item.html">
-                            <img src="/img/img-kvast.png" class="item-image" width="360" height="576" alt="Шаблон6">
+                            <img src="img/img-kvast.png" class="item-image" width="360" height="576" alt="Шаблон6">
                         </a>
                         <div class="popup-info">
                             <h3>Кваст</h3>
@@ -252,10 +256,7 @@
                     <a href="#" class="map-btn btn">Напишите нам</a>
                 </address>
             </div>
-
-            <div class="map">
-                <img src="/img/map.png" width="1440" height="416" alt="Как добраться">
-            </div>
+            
         </section>
     </main>
     <!-- Подвал с соцсетями и скидкой -->
