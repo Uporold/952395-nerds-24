@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
     <title>HTML Academy: Нёрдс Главная</title>
     <link type="text/css" href="css/normalize.css" rel="stylesheet" media="all" />
     <link type="text/css" href="css/style.css" rel="stylesheet" media="all" />
@@ -15,7 +15,7 @@
         <header class="main-header template">
 
             <div class="main-header-logo">
-                <a class="site-logo">
+                <a class="site-logo" href="index.html">
                     <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип компании «Нёрдс»">
                 </a>
             </div>
@@ -170,10 +170,14 @@
             </ul>
         </section>
 
-        <section class="map-contacts">
-
-            <div class="info-map-box">
+       
+    </main>
+    
+     <section class="map-contacts">
+            <div id = "map" class ="map"></div>
+            <div class = "template map-template">
                 <address class="info-map">
+                <div class = "contacts">
                     <h3>Nёrds Design Studio</h3>
 
                     <p>191186, Санкт-Петербург,
@@ -183,11 +187,12 @@
 
                     <a href="tel:+78122757575"> тел. +7 (812) 275-75-75</a>
                     <a href="#" class="map-btn btn">Напишите нам</a>
+                    </div>
                 </address>
             </div>
             
         </section>
-    </main>
+    
     <!-- Подвал с соцсетями и скидкой -->
     <footer class="page-footer template">
 

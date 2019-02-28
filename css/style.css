@@ -63,7 +63,8 @@ img {
 
 .main-header {
     display: flex;
-    margin-bottom: -60px;
+    margin-bottom: -15px;
+    align-items: center;
 }
 
 .main-header-logo {
@@ -72,7 +73,8 @@ img {
 
 .main-nav {
 
-    margin: -18px 140px 18px;
+    margin-left: 178px;
+    margin-top: 12px;
 
 
 }
@@ -81,13 +83,15 @@ img {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 
 
 
 }
 
 .nav-element {
-    padding: 26px 0;
+
     margin-left: 23px;
     margin-right: 23px;
     text-decoration: none;
@@ -95,10 +99,9 @@ img {
 }
 
 .cart {
-    padding: 23px 0;
     margin-left: auto;
-
     line-height: 34px;
+    margin-top: 10px;
 
 }
 
@@ -109,22 +112,9 @@ img {
 
 }
 
-.site-navigation-current {
-    position: relative;
-}
 
-.site-navigation-current::after {
-    content: "";
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    bottom: 21px;
-    left: 0;
-    background-color: #fb565a;
-}
 
 .nav-element a {
-    padding: 26px 0;
     font-size: 16px;
     line-height: 30px;
     text-transform: uppercase;
@@ -132,6 +122,11 @@ img {
     transition: opacity 150ms, color 150ms;
     color: black;
     font-weight: bold;
+    display: inline-block;
+}
+
+.site-navigation-current {
+    border-bottom: 2px solid red;
 }
 
 .nav-element a[href]:hover,
@@ -141,6 +136,7 @@ img {
 
 .nav-element a[href]:active {
     color: gray;
+
 }
 
 
@@ -230,7 +226,7 @@ img {
 .slider-item:nth-child(1) {
     background-image: url("../img/slide1.png");
     background-repeat: no-repeat;
-    background-position: 93% 18px;
+    background-position: 93% 12px;
 }
 
 .slider-item:nth-child(2) {
@@ -630,7 +626,7 @@ img {
 .clients {
     border-bottom: 2px solid #eeeeee;
     padding-left: 0;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 
 
 
@@ -649,61 +645,75 @@ img {
 /* Карта */
 
 .map-contacts {
-    width: 1440px;
     background: url(../img/map.png) no-repeat 50% 50%;
-    margin-left: -140px;
     padding: 25px 0;
+    position: relative;
+    min-height: 416px;
+
 }
 
 
-.info-map-box {
-
-    z-index: 1;
-    box-sizing: border-box;
-    width: 320px;
-    height: 310px;
-    padding: 55px;
-    background-color: #ffffff;
-    margin-bottom: 36px;
-    margin-left: 140px;
-    margin-top: 35px;
 
 
+
+}
+
+.map-template {
+    position: absolute;
+    top 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .info-map {
     font-style: normal;
-    margin-top: -20px;
+    width: 230px;
+    background-color: #fff;
+    padding-top: 40px;
+    padding-bottom: 47px;
+    padding-left: 44px;
+    padding-right: 45px;
+    margin-top: 55px;
 }
 
 .info-map a {
     text-decoration: none;
+    margin-left: 2px;
 }
 
 .info-map h3 {
     text-transform: uppercase;
-    margin-bottom: 25px;
+    font-size: 18px;
+    margin-bottom: 24px;
 }
 
 .map-btn {
-    margin-top: 35px;
+    margin-top: 38px;
     padding: 16px 0;
     width: 220px;
-    margin-left: -5px;
+
 }
 
 .info-map p {
     line-height: 1.3;
+    margin-left: 2px;
+}
+
+
+.contacts {
+    margin-left: 4px;
+
+
 }
 
 /*Подвал*/
 
 .page-footer {
-    flex: 0 0 auto;
     display: flex;
     align-items: flex-start;
-    margin-top: 58px;
+    margin-top: 48px;
     margin-bottom: 78px;
+
 }
 
 
@@ -715,10 +725,9 @@ img {
 }
 
 .discount {
-    display: flex;
-    flex-direction: column;
-    flex: 0 1 760px;
-    min-width: 560px;
+
+    width: 760px;
+
 }
 
 .discount h2 {
@@ -820,16 +829,22 @@ img {
 }
 
 .popup-form {
-    z-index: 2;
     position: fixed;
-    margin-left: 500px;
     width: 960px;
     background-color: #ffffff;
     box-shadow:
         -45px 0 45px -40px rgba(0, 0, 0, 0.65),
         45px 0 45px -40px rgba(0, 0, 0, 0.65),
         0 14px 30px 2px rgba(0, 0, 0, 0.2);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
 }
+
+
+
 
 .popup-form-container {
     display: none;
@@ -837,6 +852,7 @@ img {
 
 .show {
     display: block;
+
 }
 
 .popup-form-legend {
