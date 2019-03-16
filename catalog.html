@@ -44,9 +44,9 @@
         </div>
     </div>
 
-    <main class="catalog-main">
-        <div class="catalog-grid template">
-            <section class="filters template">
+    <main class="template">
+        <div class="catalog-grid">
+            <section class="filters">
                 <h2 class="visually-hidden">Фильтр товаров</h2>
                 <form class="filter" method="get" action="https://echo.htmlacademy.ru">
                     <fieldset class="filter-item">
@@ -61,7 +61,7 @@
           </div>
           <div class="price-controls">
             <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-            <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+            <label class="max-price">до <input name="max-price" type="text" value="15 000"></label>
           </div>
         </div>
       </fieldset>
@@ -95,11 +95,11 @@
                                 <label for="filter-advatage">Блок преимуществ</label>
                             </li>
                             <li class="filter-option">
-                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-new" checked>
+                                <input class="visually-hidden filter-input filter-input-checkbox filter-new" type="checkbox" name="news" id="filter-new" checked>
                                 <label for="filter-new">Новости</label>
                             </li>
                             <li class="filter-option">
-                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+                                <input class="visually-hidden filter-input filter-input-checkbox filter-gallery" type="checkbox" name="gallery" id="filter-gallery">
                                 <label for="filter-gallery">Галерея</label>
                             </li>
                             <li class="filter-option">
@@ -114,7 +114,7 @@
                 </form>
             </section>
 
-            <section class="catalog template">
+            <section class="catalog">
                 <div class="sorting">
                     <h2 class="sorting-heading">Сортировать:</h2>
                     <ul class="sorting-list">
@@ -156,7 +156,7 @@
                             <h3>Sedona</h3>
                             <p>Информационный сайт <br>
                                 для туристов</p>
-                            <a href="#" class="btn">9 900 РУБ.</a>
+                            <a href="#" class="btn info-btn">9 900 РУБ.</a>
                         </div>
                     </li>
 
@@ -168,7 +168,7 @@
                             <h3>Pink App</h3>
                             <p>Продуктовый лендинг <br>
                                 приложения для iOS и Android</p>
-                            <a href="#" class="btn">9 900 РУБ.</a>
+                            <a href="#" class="btn info-btn">9 900 РУБ.</a>
                         </div>
                     </li>
 
@@ -180,7 +180,7 @@
                             <h3>Barbershop</h3>
                             <p>Сайт салона красоты. <br>
                                 Для мужчин, да.</p>
-                            <a href="#" class="btn">9 900 РУБ.</a>
+                            <a href="#" class="btn info-btn">9 900 РУБ.</a>
                         </div>
                     </li>
 
@@ -192,7 +192,7 @@
                             <h3>Mishka</h3>
                             <p>Интернет-магазин <br>
                                 вязаных игрушек</p>
-                            <a href="#" class="btn">9 900 РУБ.</a>
+                            <a href="#" class="btn info-btn">9 900 РУБ.</a>
                         </div>
                     </li>
 
@@ -204,7 +204,7 @@
                             <h3>A Plus</h3>
                             <p>Лендинг курсов повышения <br>
                                 квалификации</p>
-                            <a href="#" class="btn">9 900 РУБ.</a>
+                            <a href="#" class="btn info-btn">9 900 РУБ.</a>
                         </div>
                     </li>
 
@@ -216,7 +216,7 @@
                             <h3>Кваст</h3>
                             <p>Промо-сайт производителя <br>
                                 крафтового кваса</p>
-                            <a href="#" class="btn">9 900 РУБ.</a>
+                            <a href="#" class="btn info-btn">9 900 РУБ.</a>
                         </div>
                     </li>
                 </ul>
@@ -243,9 +243,9 @@
 
     </main>
     
-    <section class="map-contacts">
-            <div id = "map" class ="map"></div>
-            <div class = "template map-template">
+  <section class="map-contacts">
+            <div id="map" class="map"></div>
+            <div class="template">
                 <address class="info-map">
                 <div class = "contacts">
                     <h3>Nёrds Design Studio</h3>
@@ -256,12 +256,11 @@
                     </p>
 
                     <a href="tel:+78122757575"> тел. +7 (812) 275-75-75</a>
-                    <a href="#" class="map-btn btn">Напишите нам</a>
+                    <a href="form.html" class="map-btn btn">Напишите нам</a>
                     </div>
                 </address>
             </div>
-            
-        </section>
+    </section>
     
     <!-- Подвал с соцсетями и скидкой -->
      <footer class="page-footer template">
@@ -323,24 +322,9 @@
             </fieldset>
         </form>
     </div>
+     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
+    <script src ="js/main.js"></script>
 </body>
-<script>
-	var link = document.querySelector(".map-btn");
-	var popup = document.querySelector(".popup-form-container");
-    var close = document.querySelector(".close-cross");
-    var login = popup.querySelector("[name = name]");
+
     
-	link.addEventListener("click", function(evt){
-		evt.preventDefault();
-		popup.classList.add("show");
-        login.focus();
-	});
-    
-    close.addEventListener("click", function(evt){
-		evt.preventDefault();
-        popup.classList.remove("show");
-    });
-	</script>
-    
-</body>
 </html>
