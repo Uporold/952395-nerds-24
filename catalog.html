@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
-
+    
 <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
     <title>HTML Academy: Нёрдс Магазин</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-     <link type="text/css" href="css/normalize.css" rel="stylesheet" media="all" />
-    <link type="text/css" href="css/style.css" rel="stylesheet" media="all" />
-    <link type="text/css" href="css/main.css" rel="stylesheet" media="all" />
-    <script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
-    <script type="text/javascript" src="js/jquery.ui-slider.js"></script>
-    <script type="text/javascript" src="js/jquery.main.js"></script>
+    <link type="text/css" href="css/normalize.css" rel="stylesheet" media="all" />
+    <link type="text/css" href="css/style-min.css" rel="stylesheet" media="all" />
 </head>
 
 <body>
@@ -21,7 +17,7 @@
 
             <div class="main-header-logo">
                 <a class="site-logo" href="index.html">
-                    <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип компании «Нёрдс»">
+                    <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип компании «Нёрдс»">
                 </a>
             </div>
 
@@ -50,30 +46,30 @@
                 <h2 class="visually-hidden">Фильтр товаров</h2>
                 <form class="filter" method="get" action="https://echo.htmlacademy.ru">
                     <fieldset class="filter-item">
-        <legend>Стоимость:</legend>
-        <div class="range-filter">
-          <div class="range-controls">
-            <div class="scale">
-              <div class="bar"></div>
-            </div>
-            <div class="toggle toggle-min"></div>
-            <div class="toggle toggle-max"></div>
-          </div>
-          <div class="price-controls">
-            <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-            <label class="max-price">до <input name="max-price" type="text" value="15 000"></label>
-          </div>
-        </div>
-      </fieldset>
+                        <legend>Стоимость:</legend>
+                        <div class="range-filter">
+                            <div class="range-controls">
+                                <div class="scale">
+                                    <div class="bar"></div>
+                                </div>
+                                <div class="toggle toggle-min"></div>
+                                <div class="toggle toggle-max"></div>
+                            </div>
+                            <div class="price-controls">
+                                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                                <label class="max-price">до <input name="max-price" type="text" value="15 000"></label>
+                            </div>
+                        </div>
+                    </fieldset>
                     <fieldset class="filter-field">
                         <legend class="filter-legend">Сетка:</legend>
                         <ul class="filter-list">
                             <li class="filter-option">
-                                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="adapt" id="filter-adapt">
+                                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="adapt" id="filter-adapt" checked>
                                 <label for="filter-adapt">Адаптивная</label>
                             </li>
                             <li class="filter-option">
-                                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="fixed" id="filter-fixed" checked>
+                                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="fixed" id="filter-fixed">
                                 <label for="filter-fixed">Фиксированная</label>
                             </li>
                             <li class="filter-option">
@@ -133,13 +129,13 @@
 
                     <ul class="sorting-arrows">
                         <li class="sorting-arrows-element">
-                            <a href="#" class = "down">
+                            <a href="#" class="down">
                                 <span class="visually-hidden">По убыванию</span>
                             </a>
                         </li>
 
                         <li class="sorting-arrows-element">
-                            <a href="#" class = "up">
+                            <a href="#" class="up">
                                 <span class="visually-hidden">По возрастанию</span>
                             </a>
                         </li>
@@ -149,9 +145,9 @@
 
                 <ul class="catalog-list">
                     <li class="catalog-item">
-
-                        <img src="img/img-sedona.png" class="item-image" width="360" height="576" alt="Шаблон1">
-
+                        <a href="catalog-item.html">
+                            <img src="img/img-sedona.png" class="item-image" width="360" height="576" alt="Шаблон Sedona">
+                        </a>
                         <div class="popup-info">
                             <h3>Sedona</h3>
                             <p>Информационный сайт <br>
@@ -162,7 +158,7 @@
 
                     <li class="catalog-item">
                         <a href="catalog-item.html">
-                            <img src="img/img-pink.png" class="item-image" width="360" height="576" alt="Шаблон2">
+                            <img src="img/img-pink.png" class="item-image" width="360" height="576" alt="Шаблон Pink App">
                         </a>
                         <div class="popup-info">
                             <h3>Pink App</h3>
@@ -174,7 +170,7 @@
 
                     <li class="catalog-item">
                         <a href="catalog-item.html">
-                            <img src="img/img-barbershop.png" class="item-image" width="360" height="576" alt="Шаблон3">
+                            <img src="img/img-barbershop.png" class="item-image" width="360" height="576" alt="Шаблон Barbershop">
                         </a>
                         <div class="popup-info">
                             <h3>Barbershop</h3>
@@ -186,7 +182,7 @@
 
                     <li class="catalog-item">
                         <a href="catalog-item.html">
-                            <img src="img/img-mishka.png" class="item-image" width="360" height="576" alt="Шаблон4">
+                            <img src="img/img-mishka.png" class="item-image" width="360" height="576" alt="Шаблон Mishka">
                         </a>
                         <div class="popup-info">
                             <h3>Mishka</h3>
@@ -198,7 +194,7 @@
 
                     <li class="catalog-item">
                         <a href="catalog-item.html">
-                            <img src="img/img-aplus.png" class="item-image" width="360" height="576" alt="Шаблон5">
+                            <img src="img/img-aplus.png" class="item-image" width="360" height="576" alt="Шаблон A Plus">
                         </a>
                         <div class="popup-info">
                             <h3>A Plus</h3>
@@ -210,7 +206,7 @@
 
                     <li class="catalog-item">
                         <a href="catalog-item.html">
-                            <img src="img/img-kvast.png" class="item-image" width="360" height="576" alt="Шаблон6">
+                            <img src="img/img-kvast.png" class="item-image" width="360" height="576" alt="Шаблон Кваст">
                         </a>
                         <div class="popup-info">
                             <h3>Кваст</h3>
@@ -242,67 +238,65 @@
         </div>
 
     </main>
-    
-  <section class="map-contacts">
-            <div id="map" class="map"></div>
-            <div class="template">
-                <address class="info-map">
-                <div class = "contacts">
-                    <h3>Nёrds Design Studio</h3>
 
+    <section class="map-contacts">
+        <div id="map" class="map"></div>
+        <div class="template">
+            <div class="info-map">
+                <div class="contacts">
+                    <h3>Nёrds Design Studio</h3>
                     <p>191186, Санкт-Петербург,
                         <br>
                         ул. Б. Конюшенная, д. 19/8
                     </p>
-
                     <a href="tel:+78122757575"> тел. +7 (812) 275-75-75</a>
                     <a href="form.html" class="map-btn btn">Напишите нам</a>
-                    </div>
-                </address>
+                </div>
             </div>
+        </div>
     </section>
-    
+
     <!-- Подвал с соцсетями и скидкой -->
-     <footer class="page-footer template">
-        
-            <ul class="info soc-list">
-                <li class="soc-item">
-                    <a class="social-button vk" href="#">
-                        <span class="visually-hidden">Вконтакте</span>
-                    </a>
-                </li>
-                <li class="soc-item">
-                    <a class="social-button fb" href="#">
-                        <span class="visually-hidden">Фейсбук</span>
-                    </a>
-                </li>
-                <li class="soc-item">
-                    <a class="social-button inst" href="#">
-                        <span class="visually-hidden">Инстаграм</span>
-                    </a>
-                </li>
-            </ul>
-        
+    <footer class="page-footer template">
+
+        <ul class="info soc-list">
+            <li class="soc-item">
+                <a class="social-button vk" href="#">
+                    <span class="visually-hidden">Вконтакте</span>
+                </a>
+            </li>
+            <li class="soc-item">
+                <a class="social-button fb" href="#">
+                    <span class="visually-hidden">Фейсбук</span>
+                </a>
+            </li>
+            <li class="soc-item">
+                <a class="social-button inst" href="#">
+                    <span class="visually-hidden">Инстаграм</span>
+                </a>
+            </li>
+        </ul>
+
         <div class="discount">
             <h2>Давайте дружить, это выгодно!</h2>
             <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
     </footer>
-    
+
     <div class="popup-form-container">
-        <form action="post" class="popup-form">
+        <form action="post" class="popup-form" novalidate>
             <fieldset class="popup-form-field">
                 <legend class="popup-form-legend">Напишите нам</legend>
 
                 <div class="form-input">
                     <div class="form-input-data">
                         <label for="name" class="text-input">Ваше имя:</label>
-                        <input type="text" id="name" class="text-field" name="name" placeholder="Имя Фамилия" required>
+                        <input type="text" id="name" class="text-field" name="name" placeholder="Имя Фамилия" pattern="^[А-Яа-яЁё\s]+$">
                     </div>
 
                     <div class="form-input-data">
                         <label for="name" class="text-input">Ваш email:</label>
-                        <input type="text" id="email" name="email" class="text-field" placeholder="email@example.com" required>
+                        <input type="text" id="email" name="email" class="text-field" placeholder="email@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
                     </div>
                 </div>
 
@@ -322,9 +316,7 @@
             </fieldset>
         </form>
     </div>
-     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
-    <script src ="js/main.js"></script>
-</body>
-
-    
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
+    <script src="js/main-min.js"></script>
+</body>  
 </html>
